@@ -1,0 +1,11 @@
+<div class="card pokemon-card">
+    <div class="pokemon-image">
+        <img src="{{card.sprites.front_default}}" alt="Pokemon">
+    </div>
+    <div class="card-body">
+        <h5 class="card-title fw-bold mb-3">{{card.name}}</h5>
+        <p class="card-text"><strong>ID:</strong>{{card.id}}</p>
+        <p class="card-text"><strong>Type:</strong> {{card.name}}</p>                  
+    </div>
+    <span class="pokemon-type bg-warning text-dark">{{card.types[0].type.name}}</span>
+</div>

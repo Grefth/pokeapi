@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">  
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">POKEAPI</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">          
+          </div>
+        </div>
+      </div>    
+</nav>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 text-center">
+      <img height="150" src="https://pipedream.com/s.v0/app_mvNhzR/logo/orig" alt="">
+    </div>
+  </div>
+    <div class="row justify-content-center">        
+        <div class="col-6">
+          <div class="input-group mb-3">
+            <input id="search" type="text" class="form-control" placeholder="Buscar por Id o Nombre" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            
+        <button class="input-group-text bg-success text-white" type="button" (click)="searchByName()">Buscar</button>
+        </div>      
+      </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+  <div class="container text-center">
+    <div class="row justify-content-center">        
+      <div *ngFor="let card of cards" class="col-4 mt-3">
+        <app-card     
+        [card]="card"
+        ></app-card>
+      </div>      
+    </div>    
+  </div>        
+</div>
+
+    
