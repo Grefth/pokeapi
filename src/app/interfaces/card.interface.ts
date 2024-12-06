@@ -1,8 +1,4 @@
-export interface Card {
-    // name: string;
-    // url: string;
-    // id: number;
-    // type: string;  
+export interface Card { 
     id: number;
     name: string;
     sprites: {
@@ -14,25 +10,4 @@ export interface Card {
         };
     }[];  
 }
-    // export const exampleCard: Card = {
-    //     id: 1,
-    //     name: 'Bulbasaur',
-    //     sprites: {
-    //         front_default: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png'
-    //     },
-    //     types: [
-    //         {
-    //             type: {
-    //                 name: 'grass'
-    //             }
-    //         },
-    //         {
-    //             type: {
-    //                 name: 'poison'
-    //             }
-    //         }
-    //     ]
-    // };
 
-
-//acceder al elemento types del objeto card
